@@ -11,5 +11,7 @@ ADD shared-mods/sourcemod-1.10.0-git6462-linux.tar.gz /steam-home/server_css/cst
 ## Damage Report
 ADD css-server/mods/gem_damage_report-1.1.13.smx /steam-home/server_css/cstrike/addons/sourcemod/plugins/gem_damage_report.smx 
 
+ENV CSS_START="+map de_dust +maxplayers 12 +rcon_password admin"
+
 # Start the server
-CMD /steam-home/server_css/srcds_run -game cstrike +map de_dust -maxplayers 12
+CMD /steam-home/server_css/srcds_run -game cstrike $CSS_START

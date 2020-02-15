@@ -9,5 +9,7 @@ ADD shared-mods/mmsource-1.10.7-git971-linux.tar.gz /steam-home/server_l4d2/left
 ## SourceMod
 ADD shared-mods/sourcemod-1.10.0-git6462-linux.tar.gz /steam-home/server_l4d2/left4dead2
 
+ENV L4D2_START="+map c2m1_highway +maxplayers 8 +rcon_password admin"
+
 # Start the server
-CMD /steam-home/server_l4d2/srcds_run -game left4dead2 +map c2m1_highway -maxplayers 8
+CMD /steam-home/server_l4d2/srcds_run -game left4dead2 $L4D2_START
