@@ -11,6 +11,10 @@ docker run -p 27015:27015 -p 27015:27015/udp -p 27020:27020/udp --name css-serve
 ### Usage
 docker run -p 27015:27015 -p 27015:27015/udp -p 27020:27020/udp --name l4d2-server roemer/l4d2-server
 
+## Team Fortress 2
+## Usage
+docker run -p 27015:27015 -p 27015:27015/udp -p 27020:27020/udp --name tf2-server roemer/tf2-server
+
 # Development
 ## Building
 ### steamcmd
@@ -21,3 +25,6 @@ docker run -p 27015:27015 -p 27015:27015/udp -p 27020:27020/udp --name l4d2-serv
 
 ### l4d2-server
 `docker build -t roemer/l4d2-server -f l4d2-server/Dockerfile .`
+
+### tf2-server
+`docker build -t roemer/tf2-server -f tf2-server/Dockerfile .`
